@@ -1,0 +1,109 @@
+
+
+.modalOutside{
+   position: fixed;
+   inset: 0;
+   box-sizing: border-box;
+   padding: 20px; /* margem mínima entre o modal e as bordas da tela */
+   background-color: rgba(10,10,10, 0.8);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.modalContainer{
+   width: 500px;
+   max-width: 100%;
+   max-height: 100%;
+   overflow-y: auto; /* conteúdo grande rola dentro do modal */
+   box-sizing: border-box;
+   min-height: 50px;
+}
+
+
+
+
+.modalContainer{
+   border: 1px solid rgb(101,101,101);
+   border-radius: 10px;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: space-between;
+
+  gap:10px;
+}
+
+
+
+.modalContainer > div{
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-between; */
+   width: 100%;
+   gap: 24px;
+}
+
+
+.modalContainer  p {
+   white-space: pre-line;
+   word-break: break-word;
+   line-height: 1.5;
+}
+
+
+.headerRow{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+}
+
+
+.closeModalButton{
+   border: none;
+}
+
+
+.buttonPublish{
+   border: 1px solid transparent;
+   border-radius: 10px;
+   padding: 10px;
+   font-size: 16px;
+   background-color: #315DAE;
+   color: #FFF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+}
+
+.buttonPublish > svg{
+   background-color: transparent;
+   color: #FFF;
+   fill: #FFF;
+}
+
+.buttonPublish.published{
+  background-color: rgb(23, 181, 23); 
+}
+
+
+.modalImage{
+   width: 100%;
+   max-height: 250px;
+   flex-shrink: 0;
+   object-fit: cover;
+   border-radius: 10px;
+}
+
+.buttonEdit{
+   border: 1px solid transparent;
+   border-radius: 10px;
+   padding: 10px;
+   font-size: 16px;
+   background-color: #9D76C1;
+   color: #FFF;
+}

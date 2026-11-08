@@ -1,0 +1,133 @@
+
+.divListItems{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.divItem > .itemActions{
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   width: auto;
+   cursor: default;
+}
+
+.divItem > .itemActions > button{
+   border-radius: 10px;
+   width: 30px;
+   height: 30px;
+}
+
+.itemActions > .deleteButton{
+   border: 1px solid  rgb(255, 40, 40);
+}
+
+.itemActions > .editButton{
+   border: 1px solid #9D76C1;
+}
+
+.divItem{
+   border: 1px solid rgb(101,101,101);
+   border-radius: 10px;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+  gap:10px;
+}
+
+.itemThumb{
+   width: 60px;
+   height: 60px;
+   object-fit: cover;
+   border-radius: 10px;
+}
+
+.divItem > div{
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-between; */
+   width: 100%;
+   cursor: pointer;
+   min-width: 0;
+}
+
+.divItem >div > div{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 10px;
+}
+
+.itemDescription{
+   color: #887987;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+
+
+
+
+.emptyListContainer{
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 8px;
+}
+
+.emptyListContainer h2 {
+  color: var(--text-muted, #887987);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.retryButton{
+   margin-top: 10px;
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: 0;
+   background-color: #315DAE;
+   color: #FFF;
+}
+
+.emptyListContainer > .addButton {
+   margin-top: 20px;
+   font-size: 80px;
+   display: flex;
+   align-items:center;
+   padding: 20px;
+   border-radius: 100%;
+   overflow: hidden;
+   border: 2px solid #315DAE;
+   
+}
+
+
+
+.emptyListContainer > .addButton:hover {
+   background-color: #315DAE;
+   transform: scale(1.15);
+}
+
+.emptyListContainer > .addButton:hover > svg {
+  color: #FFFFFF;
+}
+
+.emptyListContainer > .addButton svg,
+.emptyListContainer > .addButton svg * {
+  background-color: transparent !important;
+  color: #315DAE !important;
+  fill: #315DAE !important; 
+}
+
+.emptyListContainer > .addButton:hover svg,
+.emptyListContainer > .addButton:hover svg * {
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
+}

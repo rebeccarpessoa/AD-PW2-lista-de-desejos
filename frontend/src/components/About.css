@@ -1,0 +1,22 @@
+.aboutContainer{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 12px;
+}
+
+
+.divImage{
+   width: 200px;
+   height: 200px;
+   border-radius: 100%;
+   overflow: hidden;
+   border: 1px solid green
+}
+
+.divImage > img {
+   width:100%;
+   height: 100%;
+   object-fit: cover;
+}

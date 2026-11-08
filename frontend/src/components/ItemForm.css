@@ -1,0 +1,71 @@
+
+.divSignItem{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.divSignItem > form{
+  display: flex;
+  flex-direction: column;
+}
+
+.divSignItem > form > input{
+   margin-top: 5px;
+   padding: 10px;
+   margin-bottom: 15px;
+   border-radius: 10px;
+   border: 1px solid grey;
+}
+
+.divSignItem > form > textarea{
+  margin-top: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  height: 70px;
+  resize: none;
+}
+
+.divSignItem .fieldError{
+  color: red;
+  font-size: 14px;
+  margin: -10px 0 15px 0;
+}
+
+.divSignItem .helperText{
+  color: #887987;
+  margin-bottom: 15px;
+}
+
+.divSignItem .currentImage{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.divSignItem .checkboxRow{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+
+.divSignItem > form > button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  /* background-color: rgb(23, 181, 23); */
+  background-color: #315DAE;
+  color: white;
+}
+
+.divSignItem > form > button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
